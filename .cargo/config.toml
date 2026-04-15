@@ -1,0 +1,9 @@
+# .cargo/config.toml
+[alias]
+b = "build"
+c = "check"
+
+# Now 'cargo prod' will run 'cargo run --release'
+dev = "watch -q -c -w src/ -x  run"
+prod = "run c b --release"
+
